@@ -1,4 +1,6 @@
 -module(unixsocket).
+-author({ "David Goehrig","dave@dloh.org"}).
+-copyright("© 2012 David J. Goehrig").
 
 -export([init/0, open/1, close/1, read/2, write/2 ]).
 
