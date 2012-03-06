@@ -11,6 +11,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#ifndef enif_is_number
+#define enif_is_number(X,Y) Y
+#endif
+
 static ERL_NIF_TERM open_socket(ErlNifEnv* env, int argc, const ERL_NIF_TERM argv[]) {
 	struct sockaddr_un address;
 	char path[sizeof(address.sun_path)];
