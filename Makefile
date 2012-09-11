@@ -1,11 +1,8 @@
-all : release
+all : compile
 
 .PHONY: compile release clean test
 compile:
 	./rebar compile
-
-release: compile
-	./rebar generate -f
 
 test:
 	./rebar eunit
